@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String input = "";
+        String input;
         int size = 0;
 
         System.out.println("Welcome to the array sorting program!");
