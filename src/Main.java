@@ -91,9 +91,9 @@ public class Main {
             QuickSortClass.quickSort(arr);
             end = System.currentTimeMillis();
         } else if (method.equalsIgnoreCase("merge")) {
-//            begin = System.currentTimeMillis();
-//            MergeSortClass.mergeSort(arr);
-//            end = System.currentTimeMillis();
+            begin = System.currentTimeMillis();
+            MergeSortClass.mergeSort(arr);
+            end = System.currentTimeMillis();
         } else if (method.equalsIgnoreCase("bubble")) {
 //            begin = System.currentTimeMillis();
 //            BubbleSortClass.bubbleSort(arr);
@@ -116,17 +116,17 @@ public class Main {
 
     private static void printArray(int[] arr) {
 
-        System.out.println(YELLOW + "first 20" + RESET);
-        for (int i = 0; i < 20 ; i++) {
-            System.out.print(arr[i] + " ");
+        System.out.println(YELLOW + "first 10" + RESET);
+        for (int i = 0; i < 10 ; i++) {
+            System.out.print(arr[i] + "\t");
         }
-        System.out.println(YELLOW + "\nmiddle 20" + RESET);
-        for (int i = arr.length/2 ; i < (arr.length/2) + 20 ; i++) {
-            System.out.print(arr[i] + " ");
+        System.out.println(YELLOW + "\nmiddle 10" + RESET);
+        for (int i = arr.length/2 ; i < (arr.length/2) + 10 ; i++) {
+            System.out.print(arr[i] + "\t");
         }
-        System.out.println(YELLOW + "\nlast 20" + RESET);
-        for (int i = arr.length - 20 ; i < arr.length - 1 ; i++) {
-            System.out.print(arr[i] + " ");
+        System.out.println(YELLOW + "\nlast 10" + RESET);
+        for (int i = arr.length - 10 ; i < arr.length ; i++) {
+            System.out.print(arr[i] + "\t");
         }
     }
 
